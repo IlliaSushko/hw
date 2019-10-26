@@ -1,0 +1,81 @@
+$textHeight: 24px;
+$catalogTextSize: 1rem;
+$priceTextSize: 0.875rem;
+$widthButton: calc(100% - 110px);
+
+@mixin box-absolute-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.section_title {
+  font-size: $titleSize;
+  font-weight: normal;
+  text-align: center;
+  margin-top: 65px;
+  color: $mainColor;
+}
+
+.catalog {
+  &__box {
+    position: relative;
+  }
+
+  &__box-new:after {
+    content:'NEW';
+    width: 50px;
+    height: 20px;
+    color: $whiteText;
+    font-size: $smallSizeText;
+    background: #ff6008;
+    position: absolute;
+    top: 5%;
+    left: 9%;
+    text-align: center;
+    line-height: 20px;
+}
+  &__view-button {
+    @include box-absolute-center;
+    background: $mainColor;
+    color: $whiteText;
+    font-size: $smallSizeText;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    max-width: $widthButton;
+    min-width: 70%;
+    visibility: visible;
+  }
+  &__details {
+    margin-top: 12px;
+    line-height: $textHeight;
+    font-size: $catalogTextSize;
+  }
+  &__price {
+    line-height: $textHeight;
+    font-size: $priceTextSize;
+  }
+  &__img {
+      position: relative;
+      width: 100%;
+  }
+  &__img>img {
+    width: 100%;
+  }
+}
+
+.catalog__img:hover {
+  opacity: 0.5;
+  transition: all 0.5s;
+}
+
+
+.catalog__box:hover {
+  background: #fff;
+}
+
+.catalog-box:hover .catalog__view-button {
+    visibility: hidden;
+}

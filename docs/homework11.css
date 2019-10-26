@@ -1,0 +1,15 @@
+.lighter {
+  max-width: 25%;
+  text-align: center; }
+  .lighter__light {
+    width: 150px;
+    height: 150px;
+    border: 2px solid #000;
+    border-radius: 50%; }
+    .lighter__light.active {
+      background: black; }
+  .lighter__button {
+    width: 100px; }
+
+
+/*# sourceMappingURL=homework11.css.map*/

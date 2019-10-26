@@ -1,0 +1,16 @@
+$sectionTextHeight: 30px;
+
+.information {
+    &__about-us {
+        font-size: $middleSizeText;
+        line-height: $sectionTextHeight;
+        margin-bottom: 30px;
+    }
+    &__subtitle {
+        font-size: $smallSizeText;
+        color: $mainColor;
+    }
+    &__text {
+        margin-top: 10px;
+    }
+}

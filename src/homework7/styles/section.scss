@@ -1,0 +1,83 @@
+$section-width: 500px;
+$section-height: 515px;
+$block-height: 147px;
+$textSize: 1.25rem;
+$textColor: #fff;
+$buttonColor: #d8d8d8;
+$borderSize: 18px;
+$activeColor: #097af7;
+
+.section {
+  width: $section-width;
+  height: 515px;
+  margin: 0 auto;
+  position: relative;
+  &__background > img {
+    width: 100%;
+    max-width: $section-width;
+    height: $section-height;
+  }
+  &__content {
+    background-color: rgba($color: #000000, $alpha: 0.5);
+    position: absolute;
+    height: $block-height;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+  }
+  &__text {
+    font-size: $textSize;
+    color: $textColor;
+    height: 95px;
+    overflow: hidden;
+    text-align: center;
+    padding: 0 28px;
+    line-height: 32px;
+  }
+  &__control {
+    display: flex;
+    justify-content: space-between;
+    height: 52px;
+    align-items: center;
+    padding: 0 40px;
+  }
+
+  &__buttons {
+    display: flex;
+    width: 132px;
+    justify-content: space-between;
+  }
+  &__dot {
+    background-color: $buttonColor;
+    width: 12px;
+    height: 12px;
+    border-radius: 50px;
+  }
+  &__button {
+    color: #097af7;
+    background: rgba(0, 0, 0, 0);
+    border: none;
+    position: relative;
+    outline: none;
+  }
+  &__arrow {
+    font-size: 25px;
+  }
+}
+
+.active {
+  background-color: $activeColor;
+  position: relative;
+}
+
+.active::after {
+  content: "";
+  width: $borderSize;
+  height: $borderSize;
+  border: 1px solid $activeColor;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}

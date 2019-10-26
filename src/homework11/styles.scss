@@ -1,0 +1,16 @@
+.lighter {
+    max-width: 25%;
+    text-align: center;
+    &__light {
+        width: 150px;
+        height: 150px;
+        border: 2px solid #000;
+        border-radius: 50%;
+        &.active {
+            background: rgb(000, 000, 000);
+        }
+    }
+    &__button {
+        width: 100px;
+    } 
+}

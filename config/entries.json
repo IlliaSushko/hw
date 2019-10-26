@@ -1,0 +1,56 @@
+{
+  "index": [
+    "./src/index/index.js"
+  ],
+  "lesson_1": [
+    "./src/lesson_1/lesson_1.js"
+  ],
+  "lesson_2": [
+    "./src/lesson_2/lesson_2.js"
+  ],
+  "lesson_3": [
+    "./src/lesson_3/lesson_3.js"
+  ],
+  "lesson_4": [
+    "./src/lesson_4/lesson_4.js"
+  ],
+  "lesson_5": [
+    "./src/lesson_5/lesson_5.js"
+  ],
+  "lesson_6": [
+    "./src/lesson_6/lesson_6.js"
+  ],
+  "practice_3": [
+    "./src/practice_3/practice_3.js"
+  ],
+  "homework7": [
+    "./src/homework7/homework7.js"
+  ],
+  "homework8": [
+    "./src/homework8/homework8.js"
+  ],
+  "homework9": [
+    "./src/homework9/homework9.js"
+  ],
+  "homework10": [
+    "./src/homework10/homework10.js"
+  ],
+  "homeworkCalc": [
+    "./src/homeworkCalc/homeworkCalc.js"
+  ],
+  "homework11": [
+    "./src/homework11/homework11.js"
+  ],
+  "practice5": [
+    "./src/practice5/practice5.js"
+  ],
+  "homework12": [
+    "./src/homework12/homework12.js"
+  ],
+  "lesson_15": [
+    "./src/lesson_15/lesson_15.js"
+  ],
+  "lesson_16": [
+    "./src/lesson_16/lesson_16.js"
+  ]
+}
