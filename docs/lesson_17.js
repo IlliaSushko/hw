@@ -165,12 +165,15 @@ function () {
       this.form = document.createElement("form");
       this.input = document.createElement("input");
       this.input.classList.add('name');
+      this.otherInput = document.createElement("textarea");
+      this.otherInput.classList.add('text');
       this.form.addEventListener("submit", function (e) {
         e.preventDefault();
 
         _this2.addAuthor();
       });
       this.form.appendChild(this.input);
+      this.wrapper.appendChild(this.otherInput);
       this.wrapper.appendChild(this.form);
     } //   renderInputText() {
     //       this.form = document.createElement('form');
@@ -211,11 +214,13 @@ function () {
 
       var xhr = new XMLHttpRequest();
       xhr.open("POST", "http://localhost:4001/comments");
-      var author = {
-        author: this.input.value
-      };
+      var author = this.input.value;
+      var text = this.otherInput.value;
       xhr.setRequestHeader('Content-Type', 'application/json');
-      xhr.send(JSON.stringify(author));
+      xhr.send(JSON.stringify({
+        author: author,
+        text: text
+      }));
 
       xhr.onreadystatechange = function () {
         if (xhr.readyState === 4) {
@@ -275,15 +280,14 @@ function () {
   }, {
     key: "renderItem",
     value: function renderItem(comment) {
-      var li = document.createElement("li");
-      li.innerHTML = comment.author;
+      var li = document.createElement("li"); // li.innerHTML = comment.author;
+
+      var authorName = document.createElement('div');
+      var authorText = document.createElement('div');
       li.id = comment.id;
+      this.li.appendChild(authorName);
+      this.li.appendChild(authorText);
       this.ul.appendChild(li);
-    }
-  }, {
-    key: "getDate",
-    value: function getDate() {
-      this.currentDate = new Date();
     }
   }]);
 

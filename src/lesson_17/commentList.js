@@ -40,11 +40,14 @@ export class commentList {
     this.form = document.createElement("form");
     this.input = document.createElement("input");
     this.input.classList.add('name');
+    this.otherInput = document.createElement("textarea");
+    this.otherInput.classList.add('text');
     this.form.addEventListener("submit", e => {
       e.preventDefault();
       this.addAuthor();
     });
     this.form.appendChild(this.input);
+    this.wrapper.appendChild(this.otherInput);
     this.wrapper.appendChild(this.form);
   }
 
@@ -89,12 +92,11 @@ export class commentList {
 
     xhr.open("POST", "http://localhost:4001/comments");
 
-    const author = {
-        author: this.input.value,
-    };
+    const author = this.input.value;
+    const text = this.otherInput.value;
 
     xhr.setRequestHeader('Content-Type', 'application/json')
-    xhr.send(JSON.stringify(author));
+    xhr.send(JSON.stringify({author,text}));
     xhr.onreadystatechange = () => {
       if (xhr.readyState === 4) {
         if (xhr.status === 200) {
@@ -128,13 +130,12 @@ export class commentList {
 
   renderItem(comment) {
     const li = document.createElement("li");
-    li.innerHTML = comment.author;
+    // li.innerHTML = comment.author;
+    const authorName = document.createElement('div');
+    const authorText = document.createElement('div');
     li.id = comment.id;
+    this.li.appendChild(authorName);
+    this.li.appendChild(authorText);
     this.ul.appendChild(li);
   }
-
-  getDate() {
-      this.currentDate = new Date();
-  }
-
 }
