@@ -1,0 +1,14 @@
+.comment {
+    color: black;
+    &_completed {
+        text-decoration: line-through;
+    }
+}
+
+.name {
+    padding: 5px;
+}
+
+.comment {
+    padding: 5px;
+}

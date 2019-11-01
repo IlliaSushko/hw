@@ -3,6 +3,7 @@ const container = document.querySelector(".header");
 lampSwitcher(container, 1000);
 lampSwitcher(container, 300);
 lampSwitcher(container, 2000);
+lampSwitcher();
 
 function lampSwitcher(
   rootElement = document.querySelector("body"),
