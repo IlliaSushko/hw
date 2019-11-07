@@ -1,1 +1,1 @@
-{"version":3,"sources":["webpack:///./src/lesson_17/commentList.scss"],"names":[],"mappings":";AAAA;AACA,eAAe;AACf;AACA,kCAAkC;;AAElC;AACA,eAAe;;AAEf;AACA,eAAe","file":"lesson_17.css","sourcesContent":[".comment {\n  color: black; }\n  .comment_completed {\n    text-decoration: line-through; }\n\n.name {\n  padding: 5px; }\n\n.comment {\n  padding: 5px; }\n"],"sourceRoot":""}
+{"version":3,"sources":[],"names":[],"mappings":"","file":"lesson_17.css","sourcesContent":[],"sourceRoot":""}

@@ -55,5 +55,8 @@
   ],
   "lesson_17": [
     "./src/lesson_17/lesson_17.js"
+  ],
+  "spa": [
+    "./src/spa/spa.js"
   ]
 }
