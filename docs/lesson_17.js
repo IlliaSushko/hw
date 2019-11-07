@@ -147,7 +147,7 @@
 /******/
 /******/
 /******/ 	// add entry module to deferred list
-/******/ 	deferredModules.push([18,"vendors~lesson_17~spa","vendors~lesson_17"]);
+/******/ 	deferredModules.push([18,"vendors~lesson_17~spa"]);
 /******/ 	// run deferred modules when ready
 /******/ 	return checkDeferredModules();
 /******/ })
