@@ -58,5 +58,11 @@
   ],
   "spa": [
     "./src/spa/spa.js"
+  ],
+  "project": [
+    "./src/project/project.js"
+  ],
+  "example": [
+    "./src/example/example.js"
   ]
 }

@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///./src/example/example.scss"],"names":[],"mappings":"AAAA;AACA;AACA,eAAe;;AAEf;AACA;AACA,gBAAgB","file":"example.css","sourcesContent":[".title {\n  width: 100%;\n  height: 100%; }\n\n.titleContainer {\n  width: 300px;\n  height: 300px; }\n"],"sourceRoot":""}

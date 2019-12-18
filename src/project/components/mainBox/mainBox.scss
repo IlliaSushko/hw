@@ -1,0 +1,42 @@
+.wrapper {
+    max-width: 400px;
+    min-height: auto;
+    background: #ffffff;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    box-shadow: 0 2px 7px 0 rgba(0,0,0,.2);
+}
+
+.infoBox {
+    width: 100%;
+    position: relative;
+}
+
+
+// .btnContainer {
+//     padding: 0 8px;
+//     align-items: flex-end;
+//     &__toggle {
+//         color: $mainColor;
+//     }
+//     &__toggle:hover {
+//         cursor: pointer;
+//     }
+// }
+
+.footerBox {
+    padding: 8px 10px;
+    align-items: flex-end;
+    &__button {
+        color: $mainColor;
+        background: linear-gradient(180deg,#e0e0e0 0,#dbdbdb 33%,#cfcfcf 51%,#c7c7c7);
+        padding: 5px 20px;
+        border-radius: 5px;
+        margin-right: 3px;
+    }
+    &__button:active {
+        font-weight: bold;
+    }
+}
