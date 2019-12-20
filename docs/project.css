@@ -14,22 +14,27 @@ button {
   border: none;
   outline: none; }
 
+html {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; }
+
 .wrapper {
   max-width: 400px;
-  min-height: auto;
+  height: auto;
   background: #ffffff;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   border-radius: 5px;
-  box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.2); }
+  box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.2);
+  position: relative; }
 
 .infoBox {
   width: 100%;
+  height: auto;
   position: relative; }
 
 .footerBox {
-  padding: 8px 10px;
+  padding: 10px 8px;
   align-items: flex-end; }
   .footerBox__button {
     color: #fb6600;
@@ -40,13 +45,40 @@ button {
   .footerBox__button:active {
     font-weight: bold; }
 
-.img {
-  width: 100%;
-  height: 100%; }
-
 .imgContainer {
-  width: 300px;
-  height: 300px; }
+  width: 100%;
+  height: 200px; }
+  .imgContainer > img {
+    width: 100%; }
+
+.contentContainer {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  transition: all 1s;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  opacity: 0; }
+  .contentContainer-active {
+    opacity: 1;
+    visibility: visible;
+    position: relative; }
+
+.textContainer {
+  padding: 0px 8px; }
+  .textContainer__title {
+    color: #fb6600;
+    font-size: 18px;
+    font-weight: bold; }
+
+.toggleBox {
+  padding: 0 8px; }
+  .toggleBox__button {
+    color: #fb6600;
+    padding: 0px; }
+  .toggleBox__button:hover {
+    cursor: pointer; }
 
 
 /*# sourceMappingURL=project.css.map*/
