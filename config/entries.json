@@ -64,5 +64,8 @@
   ],
   "example": [
     "./src/example/example.js"
+  ],
+  "project_v.2": [
+    "./src/project_v.2/project_v.2.js"
   ]
 }

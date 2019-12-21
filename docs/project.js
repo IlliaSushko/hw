@@ -194,8 +194,7 @@ function () {
     key: "init",
     value: function init() {
       this.getTasks();
-      this.render();
-      this.toggleSlideByActiveSlide();
+      this.render(); // this.toggleSlideByActiveSlide();
     }
   }, {
     key: "getTasks",
@@ -280,12 +279,10 @@ function () {
           }
         }
       }
-    }
-  }, {
-    key: "toggleSlideByActiveSlide",
-    value: function toggleSlideByActiveSlide() {
-      this.contentContainer[this.activeSlide].classList.add('contentContainer-active');
-    }
+    } // toggleSlideByActiveSlide() {
+    //   this.contentContainer[this.activeSlide].classList.add('contentContainer-active');
+    // }
+
   }]);
 
   return AdvertisitingBlock;

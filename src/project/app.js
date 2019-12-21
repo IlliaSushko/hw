@@ -14,7 +14,7 @@ export class AdvertisitingBlock {
   init() {
     this.getTasks();
     this.render();
-    this.toggleSlideByActiveSlide();
+    // this.toggleSlideByActiveSlide();
   }
 
   getTasks() {
@@ -77,10 +77,12 @@ export class AdvertisitingBlock {
       this.btnToggle.classList.add("toggleBox__button");
       this.btnToggle.innerHTML = "Toggle";
       this.btnBox.appendChild(this.btnToggle);
+
+
     }
   }
  
-  toggleSlideByActiveSlide() {
-    this.contentContainer[this.activeSlide].classList.add('contentContainer-active');
-  }
+  // toggleSlideByActiveSlide() {
+  //   this.contentContainer[this.activeSlide].classList.add('contentContainer-active');
+  // }
 }
