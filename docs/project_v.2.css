@@ -1,3 +1,87 @@
+.wrapper {
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+  background: #ffffff;
+  margin: 0 auto;
+  border-radius: 5px;
+  box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.2);
+  position: relative;
+  display: flex;
+  flex-direction: column-reverse; }
+
+.sliderContainer {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  transition: all 1s; }
+  .sliderContainer > * {
+    flex-grow: 0;
+    flex-shrink: 0; }
+
+button {
+  border: none;
+  outline: none; }
+
+.slide {
+  list-style: none;
+  width: 100%;
+  max-height: 390px;
+  position: relative;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 1s; }
+  .slide.active {
+    opacity: 1;
+    visibility: visible; }
+  .slide__img {
+    width: 100%;
+    display: block; }
+
+.textContainer {
+  padding: 0px 8px;
+  transform: translateY(-3%);
+  transition: all 1s; }
+  .textContainer.active {
+    transform: translateY(-50%); }
+  .textContainer__title {
+    color: #fb6600;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0; }
+  .textContainer__description {
+    transition: all 1s;
+    margin-bottom: 0;
+    max-height: 50px;
+    overflow: hidden;
+    max-height: 55px; }
+    .textContainer__description.active {
+      overflow: visible;
+      transition: all 1500ms; }
+  .textContainer__segment {
+    display: none; }
+
+.toggleWrapper {
+  padding: 0 8px; }
+  .toggleWrapper__btn {
+    color: #fb6600;
+    padding: 0px; }
+  .toggleWrapper__btn:hover {
+    cursor: pointer; }
+
+.control {
+  color: #fb6600;
+  background: linear-gradient(180deg, #e0e0e0 0, #dbdbdb 33%, #cfcfcf 51%, #c7c7c7);
+  padding: 5px 20px;
+  border-radius: 5px;
+  margin-right: 3px; }
+  .control:active {
+    font-weight: bold; }
+
+.controlsWrapper {
+  width: 100%;
+  padding: 10px 8px; }
 
 
 /*# sourceMappingURL=project_v.2.css.map*/

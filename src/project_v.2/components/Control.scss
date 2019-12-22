@@ -1,0 +1,20 @@
+.control {
+  color: $mainColor;
+  background: linear-gradient(
+    180deg,
+    #e0e0e0 0,
+    #dbdbdb 33%,
+    #cfcfcf 51%,
+    #c7c7c7
+  );
+  padding: 5px 20px;
+  border-radius: 5px;
+  margin-right: 3px;
+    &:active {
+        font-weight: bold;
+  }
+}
+.controlsWrapper {
+  width: 100%;
+  padding: 10px 8px;
+}

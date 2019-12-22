@@ -1,0 +1,24 @@
+.wrapper {
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    background: #ffffff;
+    margin: 0 auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 7px 0 rgba(0,0,0,.2);
+    position: relative;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.sliderContainer {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    transition: all 1s;
+    &>* {
+        flex-grow: 0;
+        flex-shrink: 0;
+    }
+
+}
